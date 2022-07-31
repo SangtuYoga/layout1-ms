@@ -13,14 +13,14 @@ import {
 import { Link } from "react-router-dom";
 
 const Topbar = ({ toggleSidebar }) => {
-  const [topbarIsOpen, setTopbarOpen] = useState(true);
+  const [topbarIsOpen, setTopbarOpen] = useState(false);
   const toggleTopbar = () => setTopbarOpen(!topbarIsOpen);
 
   return (
     <Navbar
       color="light"
       light
-      className="navbar shadow-sm p-3 mb-5 bg-white rounded"
+      className="navbar shadow-sm p-3 mb-5 bg-white rounded sticky-top"
       expand="md"
     >
       <Button color="info" onClick={toggleSidebar}>
