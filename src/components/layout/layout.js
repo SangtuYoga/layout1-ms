@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Container, Col, Row } from "react-bootstrap";
-import { Switch, Route } from "react-router-dom";
+import { Col, Row } from "react-bootstrap";
 
 import Topbar from "../topbar/Topbar";
 import SideBar from "../sidebar/SideBar";
